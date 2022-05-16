@@ -15,10 +15,12 @@ html, body {
 h1 {
   font-size: 2em;
   margin-top: 0.4em;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.6em;
+  text-align: center;
 }
 
 .apparent {
@@ -76,16 +78,23 @@ h2 {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 100%;
+}
+
+// .row.top is a way of nesting classes. It's equivalent to putting top inside row
+.row.center {
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .row.top {
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .row.bottom {
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .corner.left {
@@ -101,7 +110,15 @@ h2 {
 }
 
 .cover {
-  width: 32vw;
+  width: 50vw;
+}
+
+.music {
+  text-align: center;
+}
+
+.cover {
+  display: inline-block;
 }
 
 /* Media queries */
@@ -109,20 +126,23 @@ h2 {
 // Bootstrap equivalent: medium
 @media (min-width: 768px) {
   .cover {
-    width: 28vw;
+    // 28vw
+    width: 70vw;
   }
 }
 
 // Bootstrap equivalent: large
 @media (min-width: 992px) {
   .cover {
-    width: 24vw;
+    // 24vw
+    width: 60vw;
   }
 }
 
 // Bootstrap equivalent: extra large
 @media (min-width: 1200px) {
   .cover {
-    width: 20vw;
+    // 20vw
+    width: 40vw;
   }
 }
