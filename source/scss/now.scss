@@ -81,7 +81,6 @@ h2 {
   width: 100%;
 }
 
-// .row.top is a way of nesting classes. It's equivalent to putting top inside row
 .row.center {
   align-items: flex-start;
   justify-content: center;
@@ -126,7 +125,6 @@ h2 {
 // Bootstrap equivalent: medium
 @media (min-width: 768px) {
   .cover {
-    // 28vw
     width: 70vw;
   }
 }
@@ -134,7 +132,6 @@ h2 {
 // Bootstrap equivalent: large
 @media (min-width: 992px) {
   .cover {
-    // 24vw
     width: 60vw;
   }
 }
@@ -142,7 +139,6 @@ h2 {
 // Bootstrap equivalent: extra large
 @media (min-width: 1200px) {
   .cover {
-    // 20vw
     width: 40vw;
   }
 }
