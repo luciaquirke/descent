@@ -269,6 +269,7 @@ class Artist {
   }
 }
 
+//commit
 function authenticateSpotify(client, secret) {
   if (!client || !secret) {
     console.warn('Error getting Spotify authorization: No API credentials');
